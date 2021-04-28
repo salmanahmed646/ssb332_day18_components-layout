@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Media -->
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Components</title>
+  </head>
+  <body>
+
+
+    <section>
+      <div class="container">
+        <div class="layout">
+          <ul>
+            <li> <a href="layout.html" class="text-decoration-none fs-1"> Layout </a> </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CarouseL Start -->
+    <section>
+      <div class="container">
+        <div class="row py-3">
+          <div class="col">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="3000">
+                  <img src="images/1.jpg" class="d-block w-100" alt="">
+                  <div class="carousel-caption d-none d-md-block custom-carousel">
+                    <h5> First Slide </h5>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nostrum fugit. </p>
+                  </div>
+                </div>
+                <div class="carousel-item d-md-block" data-interval="3000">
+                  <img src="images/2.jpg" class="d-block w-100" alt="">
+                  <div class="carousel-caption d-none d-md-block custom-carousel">
+                    <h5> Second Slide </h5>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, delectus iusto. </p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-interval="4000">
+                  <img src="images/3.jpg" class="d-block w-100" alt="">
+                  <div class="carousel-caption d-none d-md-block custom-carousel">
+                    <h5> Third Silde </h5>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, fugit aperiam. </p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true">  </span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CarouseL End -->
+
+    <!-- Collapse Start -->
+    <section class="mt-5">
+      <div class="container">
+        <h1> Collapse </h1>
+        <button class="btn btn-outline-dark mb-3" data-bs-target="#mycollapse" data-bs-toggle="collapse"> Read More </button>
+
+        <div class="collapse" id="mycollapse">
+          <div class="card">
+          <div class="card-body">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem maiores iusto tempora? Ullam aut voluptatum repellendus iure rerum? Voluptatum suscipit facere maiores dolor, incidunt sit ullam ratione soluta hic dolorem.
+          </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Collapse End -->
+
+    <!-- Modal-Section Start -->
+    <!-- Modal Components-Start -->
+    <section class="mt-5">
+      <div class="container">
+        <h1> Modal- Live Demo </h1>
+        <!-- Button trigger modal-Start -->
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ex1">
+          Sign Up
+        </button>
+        <!-- Button trigger modal-End -->
+        <!-- Modal-Start -->
+        <div class="modal fade" id="ex1" tabindex="-1" aria-labelledby="exmodal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exmodal"> Modal Title </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!-- Signup-Start -->
+                <form>
+                  <div class="mb-3">
+                    <label for="exem1" class="form-label">Email address</label>
+                    <input type="email" class="form-control c-form" id="exem1" aria-describedby="emailHelp" placeholder="example@gmail.com">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="expass1" class="form-label">Password</label>
+                    <input type="password" class="form-control c-form" id="expass1" placeholder="Password">
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input c-form rounded-pill" id="excheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <!-- Signup End -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Close </button>
+                <button type="button" class="btn btn-primary"> Save Changes </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal-End -->
+        <br> <br>
+        <h1 class="mt-5"> Varying modal content </h1>
+        <!-- Varying modal content-Section Start -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalex1" data-bs-whatever="@mdo">Open modal for @mdo</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalex1" data-bs-whatever="@fat">Open modal for @fat</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalex1" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+        <div class="modal fade" id="modalex1" tabindex="-1" aria-labelledby="labelmodal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New message exampleModalLabel</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="col-form-label">Recipient:</label>
+                    <input type="text" class="form-control c-form" id="name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="text" class="col-form-label">Message:</label>
+                    <textarea class="form-control c-form" id="text"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Varying modal content-Section End -->
+      <!-- Navs And Tabs Start -->
+        <h1 class="mt-5"> Navs And Tabs </h1>
+        <h3 class="mt-3"> JavaScriot Behavior </h3>
+        <ul class="nav nav-pills" id="myTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="hometab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profiletab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contacttab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContents">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="hometab">
+            <div class="row">
+              <div class="col-md-4"> <img src="images/run-2.jpg" class="img-fluid mt-2 rounded-pill" alt=""> </div>
+              <div class="col-md-4"> <img src="images/run-2.jpg" class="img-fluid mt-2 rounded-3" alt=""> </div>
+              <div class="col-md-4"> <img src="images/run-2.jpg" class="img-fluid mt-2 rounded-circle" alt=""> </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profiletab"> Profile </div>
+          <div class="tab-pane fade mb-5" id="contact" role="tabpanel" aria-labelledby="contacttab"> Contact </div>
+        </div>
+        <!--  -->
+        <div class="d-flex align-items-start mt-5">
+          <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
+            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+          </div>
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="images/run-2.jpg" class="img-fluid w-75" alt="">
+                </div>
+                <div class="col-md-4">
+                  <img src="images/run-2.jpg" class="img-fluid w-75" alt="">
+                </div>
+                <div class="col-md-4">
+                  <img src="images/run-2.jpg" class="rounded-3 img-fluid w-75" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+              <div class="row">
+                <div class="col-md-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nobis exercitationem ut reprehenderit minima, iusto eius, rem distinctio nihil, adipisci dignissimos atque delectus enim. Quam, necessitatibus! Asperiores nam repudiandae aut, iure ullam omnis, sequi sapiente repellendus cupiditate doloremque veritatis? Ipsa harum maxime, vero temporibus quod eos esse alias impedit ipsam?
+                </div>
+                <div class="col-md-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nobis exercitationem ut reprehenderit minima, iusto eius, rem distinctio nihil, adipisci dignissimos atque delectus enim. Quam, necessitatibus! Asperiores nam repudiandae aut, iure ullam omnis, sequi sapiente repellendus cupiditate doloremque veritatis? Ipsa harum maxime, vero temporibus quod eos esse alias impedit ipsam?
+                </div>
+                <div class="col-md-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nobis exercitationem ut reprehenderit minima, iusto eius, rem distinctio nihil, adipisci dignissimos atque delectus enim. Quam, necessitatibus! Asperiores nam repudiandae aut, iure ullam omnis, sequi sapiente repellendus cupiditate doloremque veritatis? Ipsa harum maxime, vero temporibus quod eos esse alias impedit ipsam?
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+              <div class="col-md-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nobis exercitationem ut reprehenderit minima, iusto eius, rem distinctio nihil, adipisci dignissimos atque delectus enim. Quam, necessitatibus! Asperiores nam repudiandae aut, iure ullam omnis, sequi sapiente repellendus cupiditate doloremque veritatis? Ipsa harum maxime, vero temporibus quod eos esse alias impedit ipsam?
+              </div>
+              <div class="col-md-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nobis exercitationem ut reprehenderit minima, iusto eius, rem distinctio nihil, adipisci dignissimos atque delectus enim. Quam, necessitatibus! Asperiores nam repudiandae aut, iure ullam omnis, sequi sapiente repellendus cupiditate doloremque veritatis? Ipsa harum maxime, vero temporibus quod eos esse alias impedit ipsam?
+              </div>
+              <div class="col-md-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nobis exercitationem ut reprehenderit minima, iusto eius, rem distinctio nihil, adipisci dignissimos atque delectus enim. Quam, necessitatibus! Asperiores nam repudiandae aut, iure ullam omnis, sequi sapiente repellendus cupiditate doloremque veritatis? Ipsa harum maxime, vero temporibus quod eos esse alias impedit ipsam?
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+              <div class="col-md-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nobis exercitationem ut reprehenderit minima, iusto eius, rem distinctio nihil, adipisci dignissimos atque delectus enim. Quam, necessitatibus! Asperiores nam repudiandae aut, iure ullam omnis, sequi sapiente repellendus cupiditate doloremque veritatis? Ipsa harum maxime, vero temporibus quod eos esse alias impedit ipsam?
+              </div>
+              <div class="col-md-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nobis exercitationem ut reprehenderit minima, iusto eius, rem distinctio nihil, adipisci dignissimos atque delectus enim. Quam, necessitatibus! Asperiores nam repudiandae aut, iure ullam omnis, sequi sapiente repellendus cupiditate doloremque veritatis? Ipsa harum maxime, vero temporibus quod eos esse alias impedit ipsam?
+              </div>
+              <div class="col-md-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nobis exercitationem ut reprehenderit minima, iusto eius, rem distinctio nihil, adipisci dignissimos atque delectus enim. Quam, necessitatibus! Asperiores nam repudiandae aut, iure ullam omnis, sequi sapiente repellendus cupiditate doloremque veritatis? Ipsa harum maxime, vero temporibus quod eos esse alias impedit ipsam?
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      <!-- Navs And Tabs End -->
+      <!-- OffCanva-Start -->
+      <section class="mt-5 mb-5">
+        <h1> OffCanva </h1>
+        <div class="row">
+          <div>
+            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+              Link with href
+            </a>
+            <div class="offcanvas offcanvas-start c-canva" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <ul>
+                <li> <a href=""> Home </a> </li>
+                <li> <a href=""> Home </a> </li>
+                <li> <a href=""> Home </a> </li>
+                <li> <a href=""> Home </a> </li>
+                <li> <a href=""> Home </a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- OffCanva-End -->
+      <!-- Pagination Start -->
+      <section class="mb-5">
+        <h1> Pagination </h1>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item active" aria-current="page"> <a class="page-link" href="#"> 4 </a> </li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+        <!--  -->
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <!-- Pagination End -->
+      <!-- Scrollspy Start -->
+      <section class="mt-5">
+        <div class="row">
+          
+          <div class="col-lg-4">
+            <div id="list-example" class="list-group">
+              <a class="list-group-item list-group-item-action active" href="#list-item-1">Item 1</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div data-bs-spy="scroll" style="height: 400px; overflow: auto;" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example p-4 border rounded" tabindex="0">
+              <h4 id="list-item-1">Item 1</h4>
+              <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea accusantium minus nisi, accusamus reiciendis debitis et sint ad nesciunt nulla neque maiores itaque ipsum quod harum, illo delectus libero doloremque. Adipisci fugit numquam quam, pariatur provident maxime ex saepe, dignissimos expedita alias quo nihil deleniti magnam, unde minima incidunt dolorem. Alias ut deleniti architecto voluptates eum ipsa aspernatur, ea placeat eaque dolor adipisci, modi omnis, excepturi dignissimos tempora reiciendis necessitatibus consectetur possimus illo at qui sint! Quae explicabo tempore exercitationem beatae ratione, assumenda aliquid est laudantium. Quam nobis reiciendis dolores magni hic aperiam eum quas, officiis itaque commodi quaerat. Sed, harum animi quod atque ipsam totam doloribus mollitia asperiores vitae quasi distinctio rem, ipsa quae assumenda consequatur, dolore fugiat odio optio nam nisi voluptatum voluptatem perferendis voluptatibus? Asperiores harum quasi, fugit minima atque tenetur obcaecati vel fuga id praesentium possimus voluptas esse recusandae alias, aspernatur fugiat iusto aliquid veritatis dolores iure doloremque molestias sed nulla? Blanditiis obcaecati dolorem ad, quae, veniam provident officia aliquam harum ab sequi libero, aut consequatur. Ad tempore soluta corporis, eius placeat, laudantium, aliquid ratione expedita et enim deleniti magnam assumenda sit! A, iure veniam? Rerum et consequatur alias tempore architecto adipisci voluptatibus, magni nemo recusandae! </p>
+              <h4 id="list-item-2">Item 2</h4>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea accusantium minus nisi, accusamus reiciendis debitis et sint ad nesciunt nulla neque maiores itaque ipsum quod harum, illo delectus libero doloremque. Adipisci fugit numquam quam, pariatur provident maxime ex saepe, dignissimos expedita alias quo nihil deleniti magnam, unde minima incidunt dolorem. Alias ut deleniti architecto voluptates eum ipsa aspernatur, ea placeat eaque dolor adipisci, modi omnis, excepturi dignissimos tempora reiciendis necessitatibus consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ab nihil temporibus, voluptas minima exercitationem officia! Eos dolore adipisci odit, minima inventore doloribus eaque assumenda ratione ex quod corporis corrupti facilis reiciendis necessitatibus atque sit? Dicta ipsum, modi temporibus voluptatum sed facere sint sapiente! Voluptatem veritatis accusantium eos iusto ab a, doloribus amet blanditiis saepe laborum animi dicta doloremque eaque praesentium magni quaerat unde, iure facilis nulla, debitis dolorum? Expedita iusto, similique quae perferendis dolores quibusdam fugit, cum delectus voluptas veniam ab corporis doloribus dolorum magni ad repudiandae aliquam iste quam officiis tenetur in nihil, commodi facilis. Quos quae illum voluptatibus eaque aspernatur praesentium beatae aliquam nihil, quo, minima repellat ex quod laboriosam ullam minus possimus rem cumque amet nulla. Nobis eaque quae quidem earum error. Odit, rem libero tenetur voluptate incidunt, assumenda autem voluptates dignissimos vel optio quas quis quaerat minus neque, eaque voluptatum. Sit, tempore saepe! At eos excepturi nobis blanditiis nihil, odit dignissimos consectetur adipisci, totam debitis numquam consequuntur accusantium, obcaecati alias ea? Deserunt hic at soluta. Hic placeat reiciendis nam dignissimos quidem, facere laboriosam accusamus necessitatibus ab possimus odio quas ipsum ratione. Itaque perspiciatis at quidem quaerat? Inventore ullam animi exercitationem, amet quos nulla velit cumque asperiores odio voluptatem? Accusantium quas beatae et modi ullam similique? Id praesentium corporis mollitia laborum sit incidunt enim autem corrupti doloribus impedit atque aperiam asperiores quisquam, voluptates sunt vitae illo modi aut minima cupiditate sequi! Ut eaque nisi repellendus doloremque, saepe non, soluta cum harum doloribus commodi earum. Dolor quos impedit, velit hic ipsa, blanditiis, rem et porro distinctio omnis corporis quia aperiam magnam. Atque neque hic aliquam mollitia incidunt nobis sed aspernatur? Soluta atque quae officiis! Aliquid odio, vero in cum tempore et delectus vitae nostrum optio distinctio quaerat maiores, eligendi a inventore hic nobis dicta magni quibusdam fugit. possimus illo at qui sint! Quae explicabo tempore exercitationem beatae ratione, assumenda aliquid est laudantium. Quam nobis reiciendis dolores magni hic aperiam eum quas, officiis itaque commodi quaerat. Sed, harum animi quod atque ipsam totam doloribus mollitia asperiores vitae quasi distinctio rem, ipsa quae assumenda consequatur, dolore fugiat odio optio nam nisi voluptatum voluptatem perferendis voluptatibus? Asperiores harum quasi, fugit minima atque tenetur obcaecati vel fuga id praesentium possimus voluptas esse recusandae alias, aspernatur fugiat iusto aliquid veritatis dolores iure doloremque molestias sed nulla? Blanditiis obcaecati dolorem ad, quae, veniam provident officia aliquam harum ab sequi libero, aut consequatur. Ad tempore soluta corporis, eius placeat, laudantium, aliquid ratione expedita et enim deleniti magnam assumenda sit! A, iure veniam? Rerum et consequatur alias tempore architecto adipisci voluptatibus, magni nemo recusandae!</p>
+              <h4 id="list-item-3">Item 3</h4>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea accusantium minus nisi, accusamus reiciendis debitis et sint ad nesciunt nulla neque maiores itaque ipsum quod harum, illo delectus libero doloremque. Adipisci fugit numquam quam, pariatur provident maxime ex saepe, dignissimos expedita alias quo nihil deleniti magnam, unde minima incidunt dolorem. Alias ut deleniti architecto voluptates eum ipsa aspernatur, ea placeat eaque dolor adipisci, modi omnis, excepturi dignissimos tempora reiciendis necessitatibus consectetur possimus illo at qui sint! Quae explicabo tempore exercitationem beatae ratione, assumenda aliquid est laudantium. Quam nobis reiciendis dolores magni hic aperiam eum quas, officiis itaque commodi quaerat. Sed, harum animi quod atque ipsam totam doloribus mollitia asperiores vitae quasi distinctio rem, ipsa quae assumenda consequatur, dolore fugiat odio optio nam nisi voluptatum voluptatem perferendis voluptatibus? Asperiores harum quasi, fugit minima atque tenetur obcaecati vel fuga id praesentium possimus voluptas esse recusandae alias, aspernatur fugiat iusto aliquid veritatis dolores iure doloremque molestias sed nulla? Blanditiis obcaecati dolorem ad, quae, veniam provident officia aliquam harum ab sequi libero, aut consequatur. Ad tempore soluta corporis, eius placeat, laudantium, aliquid ratione expedita et enim deleniti magnam assumenda sit! A, iure veniam? Rerum et consequatur alias tempore architecto adipisci voluptatibus, magni nemo recusandae!</p>
+              <h4 id="list-item-4">Item 4</h4>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea accusantium minus nisi, accusamus reiciendis debitis et sint ad nesciunt nulla neque maiores itaque ipsum quod harum, illo delectus libero doloremque. Adipisci fugit numquam quam, pariatur provident maxime ex saepe, dignissimos expedita alias quo nihil deleniti magnam, unde minima incidunt dolorem. Alias ut deleniti architecto voluptates eum ipsa aspernatur, ea placeat eaque dolor adipisci, modi omnis, excepturi dignissimos tempora reiciendis necessitatibus consectetur possimus illo at qui sint! Quae explicabo tempore exercitationem beatae ratione, assumenda aliquid est laudantium. Quam nobis reiciendis dolores magni hic aperiam eum quas, officiis itaque commodi quaerat. Sed, harum animi quod atque ipsam totam doloribus mollitia asperiores vitae quasi distinctio rem, ipsa quae assumenda consequatur, dolore fugiat odio optio nam nisi voluptatum voluptatem perferendis voluptatibus? Asperiores harum quasi, fugit minima atque tenetur obcaecati vel fuga id praesentium possimus voluptas esse recusandae alias, aspernatur fugiat iusto aliquid veritatis dolores iure doloremque molestias sed nulla? Blanditiis obcaecati dolorem ad, quae, veniam provident officia aliquam harum ab sequi libero, aut consequatur. Ad tempore soluta corporis, eius placeat, laudantium, aliquid ratione expedita et enim deleniti magnam assumenda sit! A, iure veniam? Rerum et consequatur alias tempore architecto adipisci voluptatibus, magni nemo recusandae!.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- Scrollspy End -->
+      </div>
+    </section>
+    <!-- Modal-Section End -->
+
+    <!--  -->
+    <!--  -->
+
+
+    <!-- JS Links -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

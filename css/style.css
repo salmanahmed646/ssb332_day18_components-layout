@@ -1,0 +1,43 @@
+.layout ul {
+    background-color: #ddd;
+    text-align: center;
+}
+.layout ul li {
+    display: inline-block;
+    list-style: none;
+}
+.layout ul li a {
+    display: block;
+    color: #333;
+}
+.c-form:focus {
+    border-color: #ddd;
+    box-shadow: none;
+}
+.c-canva {
+    max-width: 300px;
+}
+.custom-carousel h5, p {
+    background-color: rgba(255,255,255,0.4) ;
+    color: #333;
+    font-size: 20px;
+}
+/*  */
+.header, .hero, .body, .bar, .footer {
+    background-color: #3498db;
+    margin-bottom: 10px;
+}
+.box {
+    margin: 10px 0;
+    min-height: 80px;
+    background-color: #333;
+}
+.red {
+    background-color: red;
+}
+.five {
+    background-color: blue;
+}
+.yellow {
+    background-color: #ddd;
+}
